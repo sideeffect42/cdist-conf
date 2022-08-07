@@ -1,0 +1,23 @@
+shell=sh
+
+external-sources=true
+
+source-path=./manifest
+
+################################################################################
+# optional checks
+
+# Suggest ${VAR} in place of $VAR
+enable=require-variable-braces
+
+# Suggest 'command -v' instead of 'which'
+enable=deprecate-which
+
+# Check for additional cases where exit codes are masked
+# enable=check-extra-masked-returns
+
+# Suggest explicitly using -n in `[ $var ]`
+enable=avoid-nullary-conditions
+
+# Notify when set -e is suppressed during function invocation
+# enable=check-set-e-suppressed
